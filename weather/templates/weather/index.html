@@ -10,16 +10,49 @@
 <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
-             role="img"><title>Bootstrap</title>
+             role="img"><title></title>
         </svg>
-        <span class="fs-4">Created by...</span>
       </a>
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Главная</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Информация</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Контакты</a>
-        <a class="py-2 link-body-emphasis text-decoration-none" href="#">Документация</a>
+<!--        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Главная</a>-->
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"> Информация </a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#"> Контакты </a>
+        <a class="py-2 link-body-emphasis text-decoration-none" href="#"> Документация </a>
       </nav>
     </div>
+    <div class="=col-5 offset-2">
+        <h1>Information</h1>
+        <div class="alert alert0info">
+            <div class="row">
+                <div class="col-9">
+                    <b> City: </b>{{ info.city }}<img src="https://openweathermap.org/img/w/{{info.icon}}.png" alt="The weather picture"><br>
+                    <b> Temperature: </b>{{ info.temp }}<sup>o</sup><br>
+                    <b> Sky: </b>{{ info.sky }}<br>
+                    <b> Wind: </b>{{ info.wind }}<br>
+                </div>
+<!--                <div class="col-2 offset-1">-->
+<!--                    <img src="https://openweathermap.org/img/w/{{info.icon}}.png" alt="The weather picture">-->
+<!--                </div>-->
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+        <span class="mb-3 mb-md-0 text-muted">Created by 2023 Company, Inc</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer>
+</div>
 </html>
