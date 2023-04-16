@@ -13,10 +13,15 @@ def index(request):
         'temp': res['main']['temp'],
         'icon': res['weather'][0]['icon'],
         'sky': res['weather'][0]['description'],
-        'wind': res['wind']['speed']
+        'wind': res['wind']['speed'],
+        'feels_like': res['main']['feels_like'],
+        'temperature_min': res['main']['temp_min'],
+        'temperature_max': res['main']['temp_max'],
+
     }
     context = {'info': city_info}
-    print(city_info)
+    # print(city_info)
     print(res)
+    print()
     print(context)
     return render(request, 'weather/index.html', context)
